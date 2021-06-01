@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name %> - <%= @restaurant.rating %> stars</h1>
+<h2>Address: <%= @restaurant.address %></h2>
+
+<%= link_to "edit", edit_restaurant_path(@restaurant)  %>
+
+<%= link_to "destroy", restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure? Really? Sure?"} %>
+
+<%= link_to "back to list", restaurants_path %>

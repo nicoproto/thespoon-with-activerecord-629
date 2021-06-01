@@ -1,0 +1,9 @@
+<div class="container col-6">
+  <%= simple_form_for resto do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :rating %>
+
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>

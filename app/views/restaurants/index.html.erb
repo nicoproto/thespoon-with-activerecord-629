@@ -1,0 +1,8 @@
+<h1>All my restos 🍽</h1>
+
+<% @restaurants.each do |resto| %>
+  <p>
+    <%= link_to resto.name, restaurant_path(resto)  %> - <%= resto.rating %> stars
+  </p>
+<% end %>
+
